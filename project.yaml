@@ -6,7 +6,7 @@ expectations:
 actions:
   generate_dataset:
     run: >
-      ehrql:v1
+      ehrql-dev:latest
         generate-dataset
         --output output/dataset.csv
         --dummy-data-file dummy_output/dataset.csv
