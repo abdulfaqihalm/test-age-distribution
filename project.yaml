@@ -9,7 +9,6 @@ actions:
       ehrql-dev:latest
         generate-dataset
         --output output/dataset.csv
-        --dummy-data-file dummy_output/dataset.csv
         analysis/dataset_definition.py
     outputs:
       highly_sensitive:
