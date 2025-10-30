@@ -6,7 +6,7 @@ expectations:
 actions:
   generate_dataset:
     run: >
-      ehrql-dev:latestarm
+      ehrql-dev:v2
         generate-dataset
         --output output/dataset.csv
         analysis/dataset_definition.py
