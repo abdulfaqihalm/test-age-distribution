@@ -10,6 +10,8 @@ actions:
         generate-dataset
         --output output/dataset.csv
         analysis/dataset_definition.py
+    env:  
+      EHRQL_ISOLATE_USER_CODE: never  
     outputs:
       highly_sensitive:
         dataset: output/dataset.csv
