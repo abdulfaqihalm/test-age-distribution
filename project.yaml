@@ -10,8 +10,6 @@ actions:
         generate-dataset
         --output output/dataset.csv
         analysis/dataset_definition.py
-    env:  
-      EHRQL_ISOLATE_USER_CODE: never  
     outputs:
       highly_sensitive:
         dataset: output/dataset.csv
@@ -24,3 +22,4 @@ actions:
     outputs:
       moderately_sensitive:
         count: output/count_by_age.csv
+# Isolation disabled due to not supporting on mac?
