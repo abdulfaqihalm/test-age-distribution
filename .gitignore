@@ -10,3 +10,4 @@ venv/
 .Rhistory
 .Rproj.user/
 .venv/
+my_command*

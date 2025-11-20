@@ -4,6 +4,7 @@ from ehrql.tables.dwh import patients
 
 dataset = create_dataset()
 dataset.define_population(patients.age_at_recruitment > 30)
+dataset.configure_dummy_data(population_size=1000)
 
 dataset.age = patients.age_at_recruitment
 dataset.sex = patients.sex
