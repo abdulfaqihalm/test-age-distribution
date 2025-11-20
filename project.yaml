@@ -16,10 +16,11 @@ actions:
 
   count_by_age:
     run: >
-      python:latest
-        python analysis/count_by_age.py
+      r:v2
+        Rscript analysis/eda.R
     needs: [generate_dataset]
     outputs:
       moderately_sensitive:
-        count: output/count_by_age.csv
+        plots: output/*.png
+        data: output/*.csv
 # Isolation disabled due to not supporting on mac?
